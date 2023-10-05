@@ -34,7 +34,7 @@ function ContactForm() {
         },
         body: JSON.stringify({
           ...formData,
-          access_key: "HER-MÅ-DU-LEGGE-INN-DIN-ACCESS-KEY", // Get your access key from https://web3forms.com/
+          access_key: "74b6e830-d3d5-4311-8835-e0b586c98ab5", // Get your access key from https://web3forms.com/
         }),
       });
 
@@ -42,7 +42,7 @@ function ContactForm() {
 
       if (data.success) {
         setSnackbarMessage(
-          "Din melding har blitt sendt! Takk for at du kontaktet oss."
+          "Hvis du sender flere meldinger, kommer Leo å biter deg"
         );
         setSnackbarType("success");
         setFormData({ email: "", message: "" });
@@ -59,24 +59,24 @@ function ContactForm() {
   };
 
   return (
-    <Box py={5} bgcolor="#ffffff" borderRadius={3} boxShadow={3} mt={4} px={3}>
+    <Box py={5} bgcolor="#E89332" borderRadius={3} boxShadow={3} mt={4} px={3}>
       <Typography variant="h6" gutterBottom color="#3f51b5">
-        Kontakt Meg
+        PENGER!!!!
       </Typography>
 
       <Stack component="form" onSubmit={handleSubmit} spacing={2}>
         <TextField
-          label="Din e-post"
+          label="Bank nummer"
           variant="outlined"
           fullWidth
           margin="normal"
           value={formData.email}
           onChange={(e) => setFormData({ ...formData, email: e.target.value })}
           required
-          type="email"
+          type="Sum"
         />
         <TextField
-          label="Melding"
+          label="Sum 10K+"
           variant="outlined"
           fullWidth
           multiline
@@ -95,7 +95,7 @@ function ContactForm() {
             color="primary"
             disabled={loading}
           >
-            {loading ? <CircularProgress size={24} color="inherit" /> : "Send"}
+            {loading ? <CircularProgress size={24} color="inherit" /> : "Get scamed"}
           </Button>
         </Stack>
       </Stack>

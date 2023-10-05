@@ -7,7 +7,7 @@ function Profile() {
       alignItems="center"
       textAlign="center"
       py={5}
-      bgcolor="#f5f5f5"
+      bgcolor="#E89332"
       borderRadius={3}
       boxShadow={3}
       spacing={2}
@@ -22,8 +22,8 @@ function Profile() {
           border: "4px solid #3f51b5",
         }}
       />
-      <Typography variant="h4" gutterBottom color="#3f51b5">
-        Juliane Mei Lien Nøttveit
+      <Typography variant="h4" gutterBottom color="#12345">
+        Leo Løvetann
       </Typography>
     </Stack>
   );
